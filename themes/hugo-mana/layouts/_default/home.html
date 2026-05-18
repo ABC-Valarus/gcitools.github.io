@@ -13,6 +13,7 @@
             {{ if site.Params.heroTitleLine2 }}
               <span class="hero-title-line2">{{ site.Params.heroTitleLine2 }}</span>
             {{ end }}
+
           </h1>
           {{ if site.Params.description }}
             <p class="hero-subtitle">&gt; {{ site.Params.description }}</p>
@@ -25,6 +26,7 @@
             </div>
           {{ end }}
         </div>
+        
         <div class="hero-image">
           {{ $avatarUrl := site.Params.avatar.home.url | default site.Params.avatar.url }}
           {{ $avatarAsset := site.Params.avatar.home.assetPath | default site.Params.avatar.assetPath }}
@@ -51,10 +53,21 @@
         </div>
       </div>
     </div>
+
+    <div class="hero-buttons">
+      <a class="hero-button primary" href="https://gofile.io/d/4fUQFQ">
+          Download
+      </a>
+  
+      <a class="hero-button secondary" href="https://donate.stripe.com/00wcN66CGfyfbc4bHB4Vy00" target="_blank" rel="noopener">
+          Donate
+      </a>
+  </div>
+
   </section>
 
+  <!--
   <div class="home-container">
-    <!-- Posts List -->
     <section class="posts-section">
       <h2 class="posts-title">{{ i18n "recentPosts" }}</h2>
 
@@ -65,4 +78,13 @@
       </div>
     </section>
   </div>
+-->
+
+<p class="hero-subtitle">
+  Making a donation will help me create even better, bigger, and more useful tools for you.<br>
+  I will also email you the extended version, so that you can experience all beta features,
+  FTP uploading, cursor capture, and extensive customization through the INI configuration.
+  Also check out https://browserling.com/ - cool stuff!
+</p>
+
 {{ end }}

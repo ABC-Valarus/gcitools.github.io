@@ -90,3 +90,39 @@
     transform: translateY(-20px);
   }
 }
+
+
+
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.hero-button.primary {
+  background: var(--primary-color, #0c0735);
+  color: var(--background-color, #3f11e2);
+}
+
+.hero-button.secondary {
+  border: 1px solid currentColor;
+  color: inherit;
+}

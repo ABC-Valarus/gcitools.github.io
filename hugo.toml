@@ -1,10 +1,4 @@
-# =============================================================================
-# Example: Single content folder, single language
-# Content: content/posts/post.md (all content in one folder, no translations)
-# See: https://gohugo.io/content-management/multilingual/
-# =============================================================================
-
-baseURL = 'https://example.com/'
+baseURL = 'https://ABC-Valarus.github.io/gcitools.github.io/'
 theme = "hugo-mana"
 defaultContentLanguage = "en"
 
@@ -40,18 +34,22 @@ defaultContentLanguage = "en"
 [params]
   enableIntegrity = false
   relatedPostsCount = 3
-  description = "Your site description"
-  author = "Your Name"
-  heroTitleLine1 = "YOUR SITE NAME"
-  heroTitleLine2 = "YOUR TAGLINE"
-  footerText = "Built with Hugo and Mana theme"
+  description = """
+  The most convenient screenshotting tool.
+  Fullscreen, Window, Region, GIF
+  at zero cost. Free, monitor- and DPI-aware.
+  """
+  author = "ABC-Valarus"
+  heroTitleLine1 = "GCILib provides"
+  heroTitleLine2 = "GCIScreenshot"
+  footerText = ""
 
   [params.avatar]
     [params.avatar.home]
-      assetPath = "images/tn.png"
+      assetPath = "images/GCIScreenshotDesktop.png"
 
     [params.avatar.about]
-      assetPath = "images/screenshot.png"
+      assetPath = "images/GCIScreenshotDesktop.png"
 
   [params.buyMeACoffee]
     enabled = false
@@ -63,7 +61,7 @@ defaultContentLanguage = "en"
 
   [params.copyright]
     startYear = 2025
-    owner = "Your Name"
+    owner = "ABC-Valarus"
 
   [params.admonitions]
     alertStyle = "favicon"
@@ -74,17 +72,18 @@ defaultContentLanguage = "en"
   pageRef = "/"
   weight = 10
 
-[[menus.main]]
-  name = "Posts"
-  pageRef = "/posts"
-  weight = 20
 
-[[menus.main]]
-  name = "Tags"
-  pageRef = "/tags"
-  weight = 30
+#[[menus.main]]
+#  name = "Posts"
+#  pageRef = "/posts"
+#  weight = 20
 
-[[menus.main]]
-  name = "About"
-  url = "/about/"
-  weight = 40
+#[[menus.main]]
+#  name = "Tags"
+#  pageRef = "/tags"
+#  weight = 30
+
+#[[menus.main]]
+#  name = "About"
+#  url = "/about/"
+#  weight = 40
